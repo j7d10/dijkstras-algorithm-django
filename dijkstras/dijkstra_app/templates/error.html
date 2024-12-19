@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Modern font */
+            background-color: #f4f3f3;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #d9534f; /* Error color */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .error-message {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 20px 0;
+            color: #5a5a5a; /* Text color */
+        }
+        a {
+            display: block; /* Make the link a block element */
+            text-align: center; /* Center the link */
+            margin-top: 30px; /* Space above the link */
+            color: #ffffff; /* Link color */
+            background-color: #5a5a5a; /* Button background */
+            padding: 10px 20px; /* Button padding */
+            border-radius: 5px; /* Rounded corners */
+            text-decoration: none; /* Remove underline */
+            font-size: 1.2em; /* Slightly larger font size */
+            transition: background-color 0.3s; /* Transition for hover effect */
+        }
+        a:hover {
+            background-color: #4a4a4a; /* Darker background on hover */
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em; /* Responsive font size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Error</h1>
+    <div class="error-message">{{ error_message }}</div>
+    <a href="{% url 'dijkstra_app:index' %}">Go Back</a>
+</body>
+</html>
